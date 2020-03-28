@@ -15,7 +15,6 @@ class GithubWatchRepoTest(unittest.TestCase):
         driver = self.driver
         driver.get("{0}/SeleniumHQ/selenium".format(self.base_url))
         watch_button = driver.find_element_by_partial_link_text("Watch").click()
-        assert login_url == driver.current_url
 
 
     def tearDown(self):
