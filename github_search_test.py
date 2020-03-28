@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 class GithubSearchTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.PhantomJS()
         self.base_url = "https://github.com"
 
 
